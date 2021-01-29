@@ -1,1 +1,1 @@
-from purethermal import *
+from .purethermal import *
