@@ -6,11 +6,11 @@ from queue import Queue
 import cv2
 import numpy as np
 
-from libuvc_wrapper import (PT_USB_PID, PT_USB_VID,  # print_device_formats,
-                            UVC_FRAME_FORMAT_Y16, VS_FMT_GUID_Y16,
-                            get_device_info, libuvc, uvc_context, uvc_device,
-                            uvc_device_handle, uvc_frame,
-                            uvc_get_frame_formats_by_guid, uvc_stream_ctrl)
+from .libuvc_wrapper import PT_USB_VID  # print_device_formats,
+from .libuvc_wrapper import (PT_USB_PID, UVC_FRAME_FORMAT_Y16, VS_FMT_GUID_Y16,
+                             get_device_info, libuvc, uvc_context, uvc_device,
+                             uvc_device_handle, uvc_frame,
+                             uvc_get_frame_formats_by_guid, uvc_stream_ctrl)
 
 
 class PureThermal:
