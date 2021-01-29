@@ -7,7 +7,7 @@ from ctypes import *
 
 def load_libuvc():
     local_dir = os.path.dirname(__file__)
-    path = local_dir + "/libuvc.so"
+    path = local_dir + "/libuvc-aarch64.so"
     libuvc = cdll.LoadLibrary(path)
     return libuvc
 
